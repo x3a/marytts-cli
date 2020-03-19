@@ -3,6 +3,7 @@
 
 A command line client for the HTTP server of the MaryTTS Text-To-Speech System.
 """
+#pylint: disable = invalid-name
 
 import sys
 
