@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """Client for the MarryTTS Text-To-Speech System
 
 This module contains the class representation of the client's interface.

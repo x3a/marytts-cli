@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """Argument parsing of the MaryTTS command-line client
 
 This module contains the setup function for the argument parser of the

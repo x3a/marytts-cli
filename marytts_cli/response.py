@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """Data structure to represent responses received from the MaryTTS server"""
 
 import collections
