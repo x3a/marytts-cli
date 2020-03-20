@@ -53,4 +53,4 @@ def setup_argparser():
         metavar='VOICE',
         help='set name of MaryTTS voice',
     )
-    return parser.parse_args()
+    return parser
