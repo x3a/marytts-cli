@@ -18,36 +18,42 @@ def setup_argparser():
         ),
     )
     parser.add_argument(
+        '-a',
         '--audio',
         type=str,
         metavar='AUDIO',
         help='set format of MaryTTS audio output',
     )
     parser.add_argument(
+        '-i',
         '--input',
         type=str,
         metavar='INPUT',
         help='set type of MaryTTS input',
     )
     parser.add_argument(
+        '-l',
         '--locale',
         type=str,
         metavar='LOCALE',
         help='set identifier of Locale',
     )
     parser.add_argument(
+        '-o',
         '--output',
         type=str,
         metavar='OUTPUT',
         help='set type of MaryTTS output',
     )
     parser.add_argument(
+        '-u',
         '--url',
         type=str,
         metavar='URL',
         help='set request URL',
     )
     parser.add_argument(
+        '-v',
         '--voice',
         type=str,
         metavar='VOICE',
