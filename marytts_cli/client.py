@@ -94,5 +94,7 @@ class MaryTTSClient():
         return self._xet('_voice', voice)
 
     def url(self, url=None):
-        """Alias for _xet('_url', value)"""
-        return self._xet('_url', url)
+        """Alias for _xet('_url', value) with additional URL parsing"""
+        if url:
+            self._xet('_url', urllib.parse.urlparse(url))
+        return self._xet('_url')
