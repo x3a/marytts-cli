@@ -10,12 +10,18 @@ import argparse
 
 def setup_argparser():
     """Setup argument parser"""
+    # The max_help_position parameter isn't part of the official public API of
+    # argparse and could disappear in future versions of it. It is used here to
+    # suppress unwanted line breaks when help information is printed until a
+    # better solution is found.
+    formatter = lambda prog: argparse.HelpFormatter(prog, max_help_position=33)
     parser = argparse.ArgumentParser(
         prog='marytts-cli',
         description=str(
             'A command-line client for the HTTP server '
             'of the MaryTTS Text-To-Speech System.',
         ),
+        formatter_class=formatter,
     )
     parser.add_argument(
         '-a',
