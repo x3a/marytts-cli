@@ -15,6 +15,7 @@ from marytts_cli.defaults import (
     DEFAULT_INPUT_TYPE,
     DEFAULT_LOCALE,
     DEFAULT_OUTPUT_TYPE,
+    DEFAULT_QUERY_TIMEOUT,
     DEFAULT_QUERY_URL,
     DEFAULT_VOICE,
 )
@@ -29,6 +30,7 @@ class MaryTTSClient():
     def __init__(self, url=DEFAULT_QUERY_URL):
         """Initialize class variables"""
         self._url = urllib.parse.urlparse(url)
+        self._timeout = DEFAULT_QUERY_TIMEOUT
         self._input_type = DEFAULT_INPUT_TYPE
         self._output_type = DEFAULT_OUTPUT_TYPE
         self._audio = DEFAULT_AUDIO
@@ -53,6 +55,7 @@ class MaryTTSClient():
             self.url().geturl(),
             headers=dict(),
             params=params,
+            timeout=self.timeout(),
         )
         return MaryTTSResponse(
             content=response.content,
@@ -98,3 +101,7 @@ class MaryTTSClient():
         if url:
             self._xet('_url', urllib.parse.urlparse(url))
         return self._xet('_url')
+
+    def timeout(self, timeout=None):
+        """Alias for _xet('_timeout', value)"""
+        return self._xet('_timeout', timeout)

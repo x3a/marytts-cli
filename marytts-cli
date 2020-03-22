@@ -30,6 +30,14 @@ def main():
         marytts_client.locale(args.locale)
     if args.output:
         marytts_client.output_type(args.output)
+    if args.timeout:
+        try:
+            timeout = float(args.timeout)
+        except ValueError:
+            sys.stderr.write('Error: Timeout must be numeric\n')
+            sys.stderr.flush()
+            sys.exit(1)
+        marytts_client.timeout(timeout)
     if args.voice:
         marytts_client.voice(args.voice)
 

@@ -46,6 +46,13 @@ def setup_argparser():
         help='set type of MaryTTS output',
     )
     parser.add_argument(
+        '-t',
+        '--timeout',
+        type=str,
+        metavar='SECONDS',
+        help='set request timeout',
+    )
+    parser.add_argument(
         '-u',
         '--url',
         type=str,
