@@ -38,19 +38,20 @@ pip install -r requirements.txt
 ## Usage
 
 ```
-usage: marytts-cli [-h] [--audio AUDIO] [--input INPUT] [--locale LOCALE]
-                   [--output OUTPUT] [--url URL] [--voice VOICE]
+usage: marytts-cli [-h] [-a AUDIO] [-i TYPE] [-l LOCALE] [-o TYPE] [-t SECONDS]
+                   [-u URL] [-v VOICE]
 
 A command-line client for the HTTP server of the MaryTTS Text-To-Speech System.
 
 optional arguments:
-  -h, --help       show this help message and exit
-  --audio AUDIO    set format of MaryTTS audio output
-  --input INPUT    set type of MaryTTS input
-  --locale LOCALE  set identifier of Locale
-  --output OUTPUT  set type of MaryTTS output
-  --url URL        set request URL
-  --voice VOICE    set name of MaryTTS voice
+  -h, --help                     show this help message and exit
+  -a AUDIO, --audio AUDIO        set format of MaryTTS audio output
+  -i TYPE, --input TYPE          set type of MaryTTS input
+  -l LOCALE, --locale LOCALE     set identifier of Locale
+  -o TYPE, --output TYPE         set type of MaryTTS output
+  -t SECONDS, --timeout SECONDS  set request timeout
+  -u URL, --url URL              set request URL
+  -v VOICE, --voice VOICE        set name of MaryTTS voice
 ```
 
 **Example**

@@ -3,34 +3,38 @@
 marytts-cli
 .SH SYNOPSIS
 .B marytts-cli
-[-h] [--audio AUDIO] [--input INPUT] [--locale LOCALE] [--output OUTPUT] [--url URL] [--voice VOICE]
+[-h] [-a AUDIO] [-i TYPE] [-l LOCALE] [-o TYPE] [-t SECONDS] [-u URL] [-v VOICE]
 .SH DESCRIPTION
 A command\-line client for the HTTP server of the MaryTTS Text\-To\-Speech
 System.
 .SH OPTIONS
 
 .TP
-\fB\-\-audio\fR AUDIO
+\fB\-a\fR AUDIO, \fB\-\-audio\fR AUDIO
 set format of MaryTTS audio output
 
 .TP
-\fB\-\-input\fR INPUT
+\fB\-i\fR TYPE, \fB\-\-input\fR TYPE
 set type of MaryTTS input
 
 .TP
-\fB\-\-locale\fR LOCALE
+\fB\-l\fR LOCALE, \fB\-\-locale\fR LOCALE
 set identifier of Locale
 
 .TP
-\fB\-\-output\fR OUTPUT
+\fB\-o\fR TYPE, \fB\-\-output\fR TYPE
 set type of MaryTTS output
 
 .TP
-\fB\-\-url\fR URL
+\fB\-t\fR SECONDS, \fB\-\-timeout\fR SECONDS
+set request timeout
+
+.TP
+\fB\-u\fR URL, \fB\-\-url\fR URL
 set request URL
 
 .TP
-\fB\-\-voice\fR VOICE
+\fB\-v\fR VOICE, \fB\-\-voice\fR VOICE
 set name of MaryTTS voice
 
 .SH AUTHORS
