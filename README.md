@@ -1,7 +1,8 @@
 # marytts-cli
 
-A command-line client for the HTTP server of the MaryTTS Text-to-Speech System
-implemented in Python 3.
+A command-line client for the HTTP server of the
+[MaryTTS](https://github.com/marytts/marytts) Text-to-Speech System implemented
+in Python 3.
 
 ## Table of Contents
 
