@@ -28,7 +28,7 @@ def setup_argparser():
         '-i',
         '--input',
         type=str,
-        metavar='INPUT',
+        metavar='TYPE',
         help='set type of MaryTTS input',
     )
     parser.add_argument(
@@ -42,7 +42,7 @@ def setup_argparser():
         '-o',
         '--output',
         type=str,
-        metavar='OUTPUT',
+        metavar='TYPE',
         help='set type of MaryTTS output',
     )
     parser.add_argument(
